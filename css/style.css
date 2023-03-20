@@ -68,6 +68,9 @@ body{
     text-align: center;
     padding-bottom: 50px;
 }
+.swiper-wrapper{
+    padding-bottom: 20px;
+}
 .swiper-slide img {
     max-width: 100%;
 }
@@ -80,6 +83,7 @@ body{
 /* Дизайн пагінації: */
 .swiper-pagination{
     bottom: 0;
+
 }
 .swiper-pagination-bullet{
     width: 20px;
@@ -92,4 +96,19 @@ body{
 .swiper-pagination-fraction {
     color: blueviolet;
     font-size: 20px;
+    margin-bottom: 30px;
+}
+/* Прогресбар: */
+.swiper-pagination-progressbar-fill {
+    background-color: #00decc;
+    
+}
+/* Скрол: */
+.swiper-scrollbar {
+
+}
+.swiper-scrollbar-drag{
+
+    cursor: pointer;
+    background-color: #08bc0e;
 }

@@ -15,6 +15,7 @@ new Swiper('.swiper', {
         // renderBullet: function(index, className){
         //     return'<span class="' + className + '">' + (index + 1) +'</span>';
         // },
+
         // Фракції:
         // type: 'fraction' - для відображення не булетами(кружечками), а на якому конкретному елементі знаходжусь і через скісну риску з скількох елементів
         type: 'fraction',
@@ -24,5 +25,15 @@ new Swiper('.swiper', {
             ' with ' +
             '<span class="' + totalClass + '"></span>';
             },
+        
+        //Прогресбар - лінія зверху
+        // type:'progressbar'
     },
+        // Скрол:
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            //Можливість перетаскувати скрол
+            draggable: true,
+        }
+
 });
