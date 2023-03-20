@@ -58,25 +58,33 @@ body{
     line-height: 1;
 }
 /* ========================================== */
-
-.swiper-slide {
+.wrapper__title{
+    padding: 15px;
+    font-size: 25px;
+    text-transform: uppercase;
     text-align: center;
 }
-.swiper-slide img{
-    max-width: 500px;
+.swiper{
+    text-align: center;
+    padding-bottom: 50px;
 }
-.swiper-button-prev::after,
-.swiper-button-next::after{
-    color: yellow;
+.swiper-slide img {
+    max-width: 100%;
+}
+/* Дизайн стрілок: */
+.swiper-button-prev::after, 
+.swiper-button-next::after {
+    color: darkgreen;
     font-size: 80px;
 }
+/* Дизайн пагінації: */
 .swiper-pagination{
     bottom: 0;
 }
 .swiper-pagination-bullet{
-    width:20px;
+    width: 20px;
     height: 20px;
     line-height: 20px;
     font-size: 14px;
-    background-color: #26b22f;
+    background-color: #00f5fd;
 }

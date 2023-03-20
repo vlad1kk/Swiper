@@ -4,12 +4,16 @@ new Swiper('.swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     },
-    //Підключення пагінації:
+   //Підключення пагінації:
     pagination: {
         el: '.swiper-pagination',
-        // При кліку на кружечки гортає зображення:
+        // Булети. При кліку на кружечки гортає зображення:
         clickable: true,
         // Щоб динамічно змінювались кружечки знизу:
         dynamicBullets: true,
+        // Кастомний булет:
+        renderBullet: function(index, className){
+            return'<span class="' + className + '">' + (index + 1) +'</span>';
+        },
     },
 });
