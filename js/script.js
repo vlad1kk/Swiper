@@ -151,6 +151,34 @@ new Swiper('.swiper', {
         //     shadowScale: 0.94,
         // }
 
+        //
+        // effect:'coverflow',
+        // Доповненння до coverflow:
+        // coverflowEffect:{
+        // кут:
+            // rotate: 20,
+        // Накладення:
+            // stretch:50,
+        // Тінь
+            // slideShadows: false,
+        // },
+
+        //Брейк поінт(адаптив), реалізувається при ефекті переключення слайдів effect: 'slide'
+        //Ширина екрана
+        effect: 'slide',
+        breakpoints:{
+            320:{
+                slidesPerView:1,
+            },
+            480:{
+                slidesPerView:2,
+            },
+            992:{
+                slidesPerView:3,
+            },
+
+        }
+
 
 
 
