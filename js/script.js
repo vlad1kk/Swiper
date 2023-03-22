@@ -1,8 +1,8 @@
-new Swiper('.swiper', {
+let myImageSlider = new Swiper('.swiper', {
     //Підключення стрілок вліво/вправо:
     navigation: {
         nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
+        prevEl: '.swiper-button-prev',
     },
    //Підключення пагінації:
     pagination: {
@@ -76,13 +76,13 @@ new Swiper('.swiper', {
         // autoHeight: true,
 
         //Кількість слайдів для показу(можна вказати auto тоді в css потрібно вказати .swiper-slide{width:auto} - тоді кількість показу слайдів буде автоматична):
-        slidesPerView: 2.7,
+        slidesPerView: 3,
 
         //Відключення функціоналу якщослайдів менше ніж потрібно
         watchOverflow: true,
 
         //Відступ між слайдами:
-        spaceBetween: 15,
+        spaceBetween: 30,
 
         //Кількість слайдів які перелистуються:
         slidesPerGroup: 1,
@@ -103,15 +103,15 @@ new Swiper('.swiper', {
         freeMode:true,
 
         //Автопрокрутка:
-        autoplay: {
+        // autoplay: {
             //Пауза між прокруткою
-            delay:1000,
+            // delay:1000,
             //Закінчити на крайньому слайді(true - тобто запинеться, але для цього потрібно відключити нескінченність)
-            stopOnLastSlide:false,
+            // stopOnLastSlide:false,
             //Відключити після ручного переключення:
-            disableOnInteraction:false,
+            // disableOnInteraction:false,
 
-        },
+        // },
 
         //Швидкість переключення слайдів(за замовчуванням 300):
         speed:800,
@@ -165,21 +165,28 @@ new Swiper('.swiper', {
 
         //Брейк поінт(адаптив), реалізувається при ефекті переключення слайдів effect: 'slide'
         //Ширина екрана
-        effect: 'slide',
-        breakpoints:{
-            320:{
-                slidesPerView:1,
-            },
-            480:{
-                slidesPerView:2,
-            },
-            992:{
-                slidesPerView:3,
-            },
-
-        }
-
-
-
-
+        // effect: 'slide',
+        // breakpoints:{
+        //     320:{
+        //         slidesPerView:1,
+        //     },
+        //     480:{
+        //         slidesPerView:2,
+        //     },
+        //     992:{
+        //         slidesPerView:3,
+        //     },
+        // }
 });
+    //Зʼєднання двох слайдерів та передача керування через роздільний обʼєкт:
+    //Ще один слайдер:
+    let myTextSlider = new Swiper('.text', {
+        //Кількість слайдів для показу:
+        slidesPerView: 3,
+        // Відступ між слайдами:
+        spaceBetween: 30,
+    });
+
+    //Передача керування:
+    myImageSlider.controller.control = myTextSlider;
+    myTextSlider.controller.control = myImageSlider;
