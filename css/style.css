@@ -67,10 +67,15 @@ body{
 .swiper{
     text-align: center;
     padding-bottom: 50px;
+    /* 
+    Для ефекта куб: 
+    width:500px;
+    */
 }
 .swiper-wrapper{
     padding-bottom: 20px;
     height: 500px;
+
 
 }
 .swiper-slide {
@@ -78,7 +83,6 @@ body{
 
 .swiper-slide img {
     max-width: 100%;
-
 }
 /* Дизайн стрілок: */
 .swiper-button-prev::after, 
