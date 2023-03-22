@@ -70,9 +70,15 @@ body{
 }
 .swiper-wrapper{
     padding-bottom: 20px;
+    height: 500px;
+
 }
+.swiper-slide {
+}
+
 .swiper-slide img {
     max-width: 100%;
+
 }
 /* Дизайн стрілок: */
 .swiper-button-prev::after, 
@@ -83,7 +89,6 @@ body{
 /* Дизайн пагінації: */
 .swiper-pagination{
     bottom: 0;
-
 }
 .swiper-pagination-bullet{
     width: 20px;
@@ -101,14 +106,12 @@ body{
 /* Прогресбар: */
 .swiper-pagination-progressbar-fill {
     background-color: #00decc;
-    
 }
 /* Скрол: */
 .swiper-scrollbar {
 
 }
 .swiper-scrollbar-drag{
-
     cursor: pointer;
     background-color: #08bc0e;
 }
